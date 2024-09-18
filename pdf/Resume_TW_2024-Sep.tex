@@ -1,0 +1,278 @@
+%-------------------------
+% Resume in Latex
+% Used by: Tianyuan Wang
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand{\resumeProjectSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \\
+      \textit{\small#4} & \textit{\small #5}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectSubheadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeProjectSubheadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\huge \scshape Tianyuan (Tiana) Wang} \\
+    \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:2022814388}{+202-281-4388}
+    $|$
+    \faEnvelopeO \hspace{.5pt} \href{twang@uga.edu}{twang@uga.edu}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/tianawangty}{tianawangty}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://tianawangty.github.io}{tianawangty.github.io}
+\end{center}
+
+
+%-----------Education-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Georgia}{Athens, GA}
+      {PhD in Agricultural and Applied Economics}{Sept 2023 -- Present}
+    \resumeSubheading
+      {University of Georgia}{Athens, GA}
+      {M.S. in Statistics}{Sept 2023 -- Present}
+    \resumeSubheading
+      {Johns Hopkins University}{Washington, DC}
+      {M.S. in Government Analytics (Data Analytics and Policy)}{Sept 2018 -- Jun 2020}
+    \resumeSubheading
+      {Hong Kong Baptist University}{Hong Kong}
+      {B.B.A. in Applied Economics with Minor in Finance}{Sept 2014 -- Jun 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------Skill and Interests-----------
+\section{Skills \& Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \vspace{1mm}
+     \textbf{Skills: }{R, Python, SQL, Stata, \LaTeX, Microsoft Suite, PowerBI, Tableau} \\
+     \vspace{1mm}
+     \textbf{Interests: }{Green Transition, Policy Evaluation, Data Science} \\
+     \vspace{1mm}
+     \textbf{Hobbies: }{Swimming (Certified as China National Level II Athlete), Hiking, Tennis} \\
+     \vspace{1mm}
+    }}
+ \end{itemize}
+
+ 
+%-----------Working Experience-----------
+\section{Working Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {International Monetary Fund (IMF)}{Washington, DC}
+      {Research Analyst (Outstanding Performance, top 10 under 30\% curve distribution)}{Dec 2020 -- Jul 2023}
+      \resumeItemListStart
+        \resumeItem{Closely working with economists in three SACU country teams and across four departments, specializing in research support, ETL pipelines, and timely resolution of glitches. [Excel, STATA, R]}
+        \resumeItem{Developed and regularly maintained interactive surveillance dashboards for economic diagnosis, and drafted data-driven analyses with charts for IMF Article IV Staff Reports. [Excel, Python, R, Flexdashboard in R]}
+        \resumeItem{Managed economic outlook files, including cleaning, restructuring, and modeling for four sectors (real, fiscal, external, financial) to enhance efficiency and consistency; collaborated with country teams and national authorities to update data and projections. [Excel, SQL]}
+        \resumeItem{Periodically appraised inputs and outputs of historical series and 5-year outlooks, validated indicator calculations using cross-country datasets, and developed a validation process for internal data submissions. [Excel]}
+        \resumeItem{Drafted contingency memos on topics including civil unrest in South Africa and Eswatini, the COVID-19 situation in Namibia, and the Namibia Policy Responses Tracker to COVID-19 (details in \href{https://www.imf.org/en/Topics/imf-and-covid19/Policy-Responses-to-COVID-19}{\color{blue}COVID-19 IMF Policy Tracker}).}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Global Risk Intelligence}{Washington, DC}
+      {Lead Data Scientist }{Jun 2019 -- Feb 2020}
+      \resumeItemListStart
+        \resumeItem{Led a team of 3 colleagues to design and implement a machine learning project focused on supply chain risk in the aerospace industry; presented findings and strategic recommendations to high-profile clients. [R, Tableau]}
+        \resumeItem{Built a data pipeline using decision-tree classification to provide risk-based recommendations for diversifying procurement sources and clustering analysis to evaluate similarities among suppliers. [Python]}
+        \resumeItem{Performed various NLP tasks, including text mining from Twitter and public-accessible documents; conducted keyness testing (Quanteda in R) with sentiment analysis (VADER in Python), and implemented Structured Topic Modeling (STM) to assess supplier similarities. [R, Python, Excel]}
+        \resumeItem{Developed a risk assessment dashboard with a structured playbook to ensure reproducibility. [R, Tableau]}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Teaching Experience-----------
+\section{Teaching Experience}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+
+     {\textbf{University of Georgia}, Department of Agricultural and Applied Economics}
+    \resumeItemListStart
+    \vspace{-2mm}
+        \resumeItem{AAEC 2580 – Applied Microeconomic Principles $|$ \emph{Supervised by Dr. Greg Colson, Spring 2024}}
+        \resumeItem{AAEC 4730 – World Food Economics $|$ \emph{Supervised by Dr. Ellen McCullough, Fall 2024}}
+    \resumeItemListEnd
+        
+    {\textbf{Hong Kong Baptist University}, Department of Accountancy, Economics and Finance}
+    \resumeItemListStart
+    \vspace{-2mm}
+        \resumeItem{BUSI 4005 - BBA Project (Professional Track) $|$ \emph{Supervised by Dr. Kin Ming Wong, AY22 -- Present}}
+    \resumeItemListEnd
+    }}
+ \end{itemize}
+ 
+
+%-----------Publication and Paper in Progress-----------
+\section{Publication \& Paper in Progress}
+    \resumeSubHeadingListStart
+        \small{\item{
+        
+        {“Macro-critical Impact of COVID-19 on Gender Inequality in SACU Region,” with Fatou Thioune, Giorgia Albertin, Romina Kazandjian \textit{(forrthcoming IMF Working Paper)}.}
+
+        {“Government R\&D and Climate Change Technologies” with Dr. Susana Ferreira \textit{(advisor).}}
+        
+        }}
+    \resumeSubHeadingListEnd
+
+
+%-----------Projects-----------
+\section{Research Projects}
+  \resumeProjectSubheadingListStart
+  
+    \resumeProjectSubheading
+      {A Machine Learning-based Toolbox for Climate Policy Analysis} {Washington, DC}
+      {\$50,000 grant from International Monetary fund $|$ {\href{https://imfilab.brightidea.com/D520}{\color{blue}Brief}}}
+      {Research Analyst \& Toolbox Developer}{Oct 2021 \textbf{--} Jul 2023}
+        \resumeItemListStart
+            \resumeItem{Led the exploration of potential analysis methods, ensuring full consideration of data availability and model feasibility using the Climate Policy Database; prepared the proposal and successfully pitched the project. [R]}
+            \resumeItem{Developed a machine learning prototype in R to perform text analysis, identifying, grouping, and reclassifying climate policies by peer countries, objectives, and similarities, enhancing policy comparison. [Python]}
+
+        \resumeItemListEnd
+        
+    \resumeProjectSubheading
+      {IMF Lending Programs Evaluation and Digitalization}{Washington, DC}
+      {Part of IMF modernization project}
+      {Data Analyst}{Jun 2021 \textbf{--} Feb 2023}
+        \resumeItemListStart
+            \resumeItem{Compiled lending data (since 1952, resulting in 50,000+ rows) with key economic indicators and analytical groupings, analyzing countries’ exposure and the impact of IMF lending policies. [SQL, Excel]}
+            \resumeItem{Reconstructed and standardized the lending database using the IMF Monitoring of Fund Arrangements database, IMF Financial Data Query Tool, and internal data sources in SQL; cross-checked missing values by reviewing Staff Reports and resolved discrepancies. [SQL, Excel]}
+            \resumeItem{Created an interactive prototype with automatic updates using multiple data sources for easier review, saving 95\% of maintenance time. [Excel]}
+            \resumeItem{Collaborated with the IT department to design and develop a dashboard for real-time monitoring and signaling of IMF lending program statuses, with weekly reports to senior IMF management. [SQL, PowerBI]}
+        \resumeItemListEnd 
+    
+    \resumeProjectSubheading
+      {Using Sentiment to Measure Market Stress}{Washington, DC}
+      {\$35,000 grant from International Monetary fund $|$ {\href{https://www.imfconnect.org/content/imf/en/annual-meetings/calendar/open/2019/10/17/challenge_finalebigdataforsurveillancepitchevent_146962.html?display=none}{\color{blue}Brief}}}
+      {Research Analyst \& Programmer}{Jun 2020 \textbf{--} May 2021}
+        \resumeItemListStart
+            \resumeItem{Replicated financial risk prediction models based on IMF Working Paper WP/04/52, extended the ability of the existing EWS with 
+            a sentiment index constructed from news in Financial Times, and developed loops to automate
+            the process. [Python, Excel, STATA]}
+            \resumeItem{Backtested decision-tree, random-forest, and XGBoost model 
+            with monthly frequency data and did horse-racing comparisons using 
+            confusion matrix and F1 score, to match up financial crisis periods. [Python]}
+            %\resumeItem{Plotted the arrival of molecules per symbol duration in a SISO MCvD system using Binomial, Poisson, and Gaussian model approximations with MATLAB.}
+            %\resumeItem{Ran Monte Carlo simulations of the Gaussian model to encode/decode randomized binary sequences in a SISO MCvD system using BCSK modulation technique and calculated the bit error rate on Z-channel.}
+        \resumeItemListEnd
+
+
+  \resumeProjectSubheadingListEnd
+
+
+
+
+\end{document}
