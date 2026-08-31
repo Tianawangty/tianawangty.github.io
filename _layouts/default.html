@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+
+<head>
+	<title>{{ page.title }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="{{ page.description | default: site.description }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:description" content="{{ page.description | default: site.description }}" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="home.html" class="logo"><strong>Tianyuan Wang</strong> Tiana</a>
+					<ul class="icons">
+						<li><a href="https://scholar.google.com/citations?user=lyj7j2EAAAAJ&hl=en" target="_blank" class="icon"><span class="ai ai-google-scholar" style="font-size:1.25em; vertical-align:middle;"></span><span class="label">Google Scholar</span></a></li>
+						<li><a href="https://www.linkedin.com/in/tianawangty/" class="icon brands fa-linkedin"><span
+									class="label">LinkedIn</span></a></li>
+					</ul>
+				</header>
+
+{{ content }}
+
+			</div>
+		</div>
+
+		{% include sidebar.html %}
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
