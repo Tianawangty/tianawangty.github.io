@@ -1,36 +1,19 @@
-# tianawangty.github.io
-Tianyuan's website
+# Tianyuan (Tiana) Wang
 
-Strata by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Applied economist · Evidence at scale
 
+[tianawangty.github.io](https://tianawangty.github.io)
 
-A simple, minimalist template that actually began life as an unused redesign of my
-personal site. Includes a (configurable) parallax background effect, Poptrox-powered
-lightbox gallery, a bunch of pre-styled elements, and Sass sources for the Sass-inclined.
+I like breaking a macro question down into its applied pixels and using large-scale data and data science to turn those pixels into evidence someone can act on.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+I am currently a Ph.D. candidate in Agricultural and Applied Economics at the University of Georgia, where I am also finishing an M.S. in Statistics. Before my Ph.D. I spent three years as a research analyst at the International Monetary Fund, supporting country teams across southern Africa alongside independent projects that ranged from early warning models for economic crises to climate policy evaluation. I hold an M.S. in Government Analytics from Johns Hopkins University and a B.B.A. in Applied Economics from Hong Kong Baptist University.
 
-(* = Not included)
+## Focus areas
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+**Food Prices and Policy** — cost pass-through, supply-chain evidence
 
-AJ
-aj@lkn.io | @ajlkn
+**Data Enthusiast** — terabyte-scale pipelines, machine learning and text as data
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+## Elsewhere
 
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+[LinkedIn](https://www.linkedin.com/in/tianawangty/) · [Google Scholar](https://scholar.google.com/citations?user=lyj7j2EAAAAJ&hl=en)
