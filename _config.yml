@@ -1,1 +1,24 @@
-theme: jekyll-theme-minimal
+title: Tianyuan (Tiana) Wang
+description: >-
+  Applied economist. I use large-scale micro data to study food prices in the
+  United States.
+url: https://tianawangty.github.io
+
+plugins:
+  - jekyll-redirect-from
+
+# The plugin writes a redirects.json manifest by default; the site does not need it.
+redirect_from:
+  json: false
+
+exclude:
+  - quality_reports
+  - README.md
+  - LICENSE.txt
+  - elements.html
+  - generic.html
+  - SESSION_REPORT.md
+  - assets/sass
+  - Gemfile
+  - Gemfile.lock
+  - vendor
