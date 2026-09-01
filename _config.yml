@@ -18,7 +18,6 @@ exclude:
   - elements.html
   - generic.html
   - SESSION_REPORT.md
-  - assets/sass
   - Gemfile
   - Gemfile.lock
   - vendor
