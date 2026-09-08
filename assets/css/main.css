@@ -229,6 +229,20 @@ strong { font-weight: 700; color: var(--ink); }
 .rail__list a { color: var(--body); font-weight: 600; line-height: 1.4; display: block; }
 .rail__list a:hover { color: var(--cobalt); text-decoration: none; }
 
+/* Scholar and LinkedIn sit inside Contact, as icon plus label so the whole
+   row is one target rather than a bare glyph. */
+.rail__social { list-style: none; margin: 16px 0 0; padding: 0; }
+.rail__social li + li { margin-top: 10px; }
+.rail__social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--body);
+  font-weight: 600;
+}
+.rail__social a:hover { color: var(--cobalt); text-decoration: none; }
+.rail__social svg { width: 17px; height: 17px; fill: currentColor; flex: none; display: block; }
+
 /* --- Navigation ----------------------------------------------------------
    A full-width band whose bottom edge is one wide, shallow arc rather than a
    straight line. Translucent and blurred, so content passes behind it as you
@@ -345,13 +359,6 @@ strong { font-weight: 700; color: var(--ink); }
 }
 
 .pagehead .actions { margin-top: 28px; }
-
-.pagehead__social {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  margin-left: 6px;
-}
 
 /* The portrait moved into the page head, so the bio runs on its own. */
 .intro .prose { max-width: var(--measure); }

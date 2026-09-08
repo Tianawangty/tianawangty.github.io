@@ -42,7 +42,6 @@
 					{% for a in page.actions %}
 					<a class="btn btn--{{ a.style }}" href="{% if a.external %}{{ a.href }}{% else %}{{ a.href | relative_url }}{% endif %}"{% if a.external %} rel="noopener" target="_blank"{% endif %}>{{ a.label }}</a>
 					{% endfor %}
-					{% if page.head_social %}<span class="social pagehead__social">{% include social.html %}</span>{% endif %}
 				</div>
 				{% endif %}
 			</div>
@@ -72,18 +71,19 @@
 				<hr class="rail__rule rail__rule--{{ page.rail_rule | default: 'twoweight' }}" />
 				<p><a href="mailto:twang@uga.edu">twang@uga.edu</a></p>
 				<p class="rail__address"><a href="https://www.caes.uga.edu/about/personnel/person/23865/tiana-wang">Department of Agricultural &amp; Applied Economics<br />University of Georgia<br />Athens, GA</a></p>
+				{% include social-labeled.html %}
 			</section>
 
 			{% if page.rail_projects == 'all' %}
 			<section>
-				<h2 class="rail__title">Projects</h2>
+				<h2 class="rail__title">Selected projects</h2>
 				<hr class="rail__rule rail__rule--{{ page.rail_rule | default: 'twoweight' }}" />
 				<ul class="rail__list">
 					<li><a href="{{ '/portfolio.html#lifeyoda' | relative_url }}">LifeYoda</a></li>
 					<li><a href="{{ '/portfolio.html#patents-explorer' | relative_url }}">Climate Technology Patents Explorer</a></li>
-					<li><a href="{{ '/portfolio.html#hk-tweets' | relative_url }}">Hong Kong Protest Tweets</a></li>
-					<li><a href="{{ '/research.html#mlcpa' | relative_url }}">Machine Learning Toolbox for Climate Policy</a></li>
-					<li><a href="{{ '/research.html#sentiment-stress' | relative_url }}">Does Sentiment Lead Market Stress?</a></li>
+					<li><a href="{{ '/portfolio.html#hk-tweets' | relative_url }}">Topic and sentiment shift around the 2019 Hong Kong bill withdrawal</a></li>
+					<li><a href="{{ '/portfolio.html#mlcpa' | relative_url }}">Machine Learning Toolbox for Climate Policy</a></li>
+					<li><a href="{{ '/portfolio.html#sentiment-stress' | relative_url }}">Does Sentiment Lead Market Stress?</a></li>
 				</ul>
 			</section>
 			{% elsif page.rail_projects == 'imf' %}
@@ -91,19 +91,12 @@
 				<h2 class="rail__title">At the IMF</h2>
 				<hr class="rail__rule rail__rule--{{ page.rail_rule | default: 'twoweight' }}" />
 				<ul class="rail__list">
-					<li><a href="{{ '/research.html#mlcpa' | relative_url }}">Machine Learning Toolbox for Climate Policy</a></li>
-					<li><a href="{{ '/research.html#sentiment-stress' | relative_url }}">Does Sentiment Lead Market Stress?</a></li>
+					<li><a href="{{ '/portfolio.html#mlcpa' | relative_url }}">Machine Learning Toolbox for Climate Policy</a></li>
+					<li><a href="{{ '/portfolio.html#sentiment-stress' | relative_url }}">Does Sentiment Lead Market Stress?</a></li>
 				</ul>
 			</section>
 			{% endif %}
 
-			{% if page.rail_elsewhere %}
-			<section>
-				<h2 class="rail__title">Elsewhere</h2>
-				<hr class="rail__rule rail__rule--{{ page.rail_rule | default: 'twoweight' }}" />
-				<div class="social">{% include social.html %}</div>
-			</section>
-			{% endif %}
 
 		</aside>
 
