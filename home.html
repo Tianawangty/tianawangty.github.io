@@ -4,65 +4,48 @@ permalink: /home.html
 redirect_from: /
 title: Tianyuan (Tiana) Wang
 description: >-
-  Applied economist. I use large-scale micro data to study food prices in the
-  United States.
+  Applied economist at the University of Georgia. Research on food prices and
+  policy, with projects in data science.
+heading: Greetings!
+lede: Applied economist &middot; Data science &middot; Evidence at scale
+avatar: true
+rail_rule: keyline
+rail_projects: all
+actions:
+  - label: See my projects
+    href: /portfolio.html
+    style: primary
+  - label: Connect on LinkedIn
+    href: https://www.linkedin.com/in/tianawangty/
+    style: ghost
+    external: true
 ---
 
-				<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h1>Greetings!</h1>
-							<p>Applied economist &middot; Evidence at scale</p>
-						</header>
-						<ul class="actions">
-							<li><a href="pdf/Resume_TW.pdf" class="button big">See Resume</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="https://www.linkedin.com/in/tianawangty/" class="button big">Connect via
-									LinkedIn</a></li>
-						</ul>
+<section class="intro">
+	<div class="prose">
+			<p>I work with the economy’s pixels, from individual transactions to local markets. I use large-scale data to study how food prices change and how policy shapes them.</p>
+			<p>I’m a Ph.D. candidate in Agricultural and Applied Economics at the <strong>University of Georgia</strong>. I’m also pursuing an M.S. in Statistics. Before UGA, I spent three years as a research analyst at the <strong>International Monetary Fund</strong>. I supported country teams across southern Africa. Alongside that work, I pursued projects in crisis early warning and climate policy analysis, often using machine learning and data science. I hold an M.S. in Government Analytics from <strong>Johns Hopkins University</strong> and a B.B.A. in Applied Economics from <strong>Hong Kong Baptist University</strong>.</p>
+	</div>
 
-						<p><span class="image right"><img src="images/biopic.png" alt="Tiana Wang" /></span>I like breaking a macro question down into its applied pixels and using large-scale data and data science to turn those pixels into evidence someone can act on. I am currently a Ph.D. candidate in Agricultural and Applied Economics at the <strong>University of Georgia</strong>, where I am also finishing an M.S. in Statistics.</p>
-						<p>Even when the question that pulls me in is a broad one, I enjoy bringing it down to something concrete enough to measure. The questions are familiar ones, like how fast prices are rising, whether it is supply or demand, or whether policy is making it worse. For example, a single inflation number is an average over thousands of local markets that moved for different reasons, and averaging them together throws away exactly the variation that tells you why. So I work from the bottom up, at whatever resolution the question actually lives at. That might be a ZIP code or a county, a week or a month, a single UPC or a product category. Throughout I rely on designs built to separate cause from coincidence.</p>
-						<p>Before my Ph.D., I spent three years as a research analyst at the <strong>International Monetary Fund</strong>, supporting country teams across southern Africa while pursuing a diverse portfolio of independent projects that ranged from early warning models for economic crises to climate policy evaluation, many of them drawing on machine learning and data science. I hold an M.S. in Government Analytics from <strong>Johns Hopkins University</strong> and a B.B.A. in Applied Economics from <strong>Hong Kong Baptist University</strong>.</p>
-					</div>
-				</section>
 
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Focus Areas</h2>
-					</header>
-					<div class="features">
-						<article>
-							<span class="icon solid fa-signal"></span>
-							<div class="content">
-								<h3>Food Prices and Policy</h3>
-								<ul>
-									<li>Cost Pass-Through</li>
-									<li>Supply-Chain Evidence</li>
-								</ul>
-							</div>
-						</article>
-						<article>
-							<span class="icon solid fa-database"></span>
-							<div class="content">
-								<h3>Data Enthusiast</h3>
-								<ul>
-									<li>Terabyte-Scale Pipelines</li>
-									<li>Machine Learning and Text as Data</li>
-								</ul>
-							</div>
-						</article>
-					</div>
-				</section>
+</section>
 
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Working at Scale</h2>
-					</header>
-					<p>My job market paper runs on roughly 8 TB of raw retail scanner records, more than one machine can hold or process. Rather than sample the data down to fit, I built the pipeline the analysis actually needed. The raw files are converted once into a columnar format and then read back in streams, so the memory each worker needs no longer depends on how large the source file is. The work runs as scheduled job arrays on a Linux high-performance computing cluster, with later stages held back until the ones they depend on have finished. Every step is safe to restart and every finished file is verified before it is trusted, so a run that dies at hour six picks up where it stopped instead of starting over.</p>
-					<p>The same project draws its control variables from four public statistical APIs and its policy variables out of the documents those policies are published in, parsing rate tables from twenty-six Federal Register notices and reading annual wage releases by their table contents rather than by position on the page, which is what catches the revised and reissued editions.</p>
-				</section>
+<section class="section">
+	<div class="entry">
+		<div class="entry__item">
+			<h2 class="entry__title">Research</h2>
+			<p class="entry__desc">Causal evidence on food prices and policy.</p>
+			<a class="arrowed" href="{{ '/research.html' | relative_url }}">Read the research</a>
+		</div>
+		<div class="entry__item">
+			<h2 class="entry__title">Portfolio</h2>
+			<p class="entry__desc">Data science and AI in practice.</p>
+			<a class="arrowed" href="{{ '/portfolio.html' | relative_url }}">See the projects</a>
+		</div>
+		<div class="entry__item">
+			<h2 class="entry__title">More about me</h2>
+			<p class="entry__desc">Interdisciplinary &middot; Resilient &middot; Collaborative &middot; Self-motivated</p>
+			<a class="arrowed" href="{{ '/resume.html' | relative_url }}">See the resume</a>
+		</div>
+	</div>
+</section>
