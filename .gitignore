@@ -3,3 +3,6 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 vendor/
+
+# Session records and plans stay local
+quality_reports/
