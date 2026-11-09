@@ -205,6 +205,7 @@ strong { font-weight: 700; color: var(--ink); }
 .rail {
   position: sticky;
   top: calc(var(--nav-h) + 32px);
+  margin-inline: 24px -24px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -741,6 +742,7 @@ strong { font-weight: 700; color: var(--ink); }
   .page { grid-template-columns: minmax(0, 1fr); gap: var(--gap-section); }
   .rail {
     position: static;
+    margin-inline: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 32px 48px;
